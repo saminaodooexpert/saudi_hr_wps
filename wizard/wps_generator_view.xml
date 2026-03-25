@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_saudi_wps_wizard_form" model="ir.ui.view">
+        <field name="name">saudi.wps.wizard.form</field>
+        <field name="model">saudi.wps.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Generate Saudi WPS">
+                <group>
+                    <field name="file_name" invisible="1"/>
+                    <field name="file_data" filename="file_name" attrs="{'invisible': [('file_data', '=', False)]}"/>
+                </group>
+                <footer>
+                    <button name="action_generate_wps" string="Generate WPS File" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <menuitem id="menu_saudi_wps" name="Saudi WPS" parent="hr.menu_hr_root" action="action_saudi_wps_wizard"/>
+</odoo>
