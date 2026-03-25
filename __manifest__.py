@@ -15,6 +15,7 @@
     'depends': ['hr', 'hr_payroll'],
     'data': [
         'views/hr_employee_views.xml',
+        'wizard/wps_generator_view.xml',
     ],
     'images': ['static/description/banner.png'],
     'installable': True,
