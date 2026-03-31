@@ -7,7 +7,7 @@
             <form string="Generate Saudi WPS">
                 <group>
                     <field name="file_name" invisible="1"/>
-                    <field name="file_data" filename="file_name"invisible="not file _data"/>
+                    <field name="file_data" filename="file_name"attrs="{'invisible':[('file_data', '=', false)]}
                 </group>
                 <footer>
                     <button name="action_generate_wps" string="Generate WPS File" type="object" class="btn-primary"/>
