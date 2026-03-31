@@ -1,6 +1,6 @@
 {
     'name': 'Saudi Payroll WPS Expert - Al-Rajhi & SNB',
-    'version': '18.0.1.0.0',
+    'version': '17.0.1.0.0',
     'category': 'Human Resources/Payroll',
     'summary': 'Generate Saudi WPS Excel files for Al-Rajhi and SNB Banks with 1-click.',
     'description': """
